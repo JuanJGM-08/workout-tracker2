@@ -3,7 +3,6 @@ const router = express.Router();
 
 const workoutScheduleController = require('../../controllers/workoutSchedule.controller');
 
-// Rutas principales
 router.get('/', workoutScheduleController.getAllWorkoutSchedules);           // GET /api/v1/workoutSchedules
 router.get('/:id', workoutScheduleController.getWorkoutScheduleById);        // GET /api/v1/workoutSchedules/:id
 router.get('/user/:userId', workoutScheduleController.getSchedulesByUser);   // GET /api/v1/workoutSchedules/user/:userId
